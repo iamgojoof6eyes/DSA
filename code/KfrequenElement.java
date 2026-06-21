@@ -18,7 +18,7 @@ public class KfrequenElement {
             (a, b) -> count.get(a)-count.get(b) // this will create a min heap based on the frequency of the elements in the count map
         );
 
-        for (int n : count. keySet()) {
+        for (int n : count.keySet()) {
             heap.add(n);
             if (heap.size() > k) {
                 heap.poll();
